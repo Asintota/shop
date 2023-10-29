@@ -52,12 +52,13 @@
           document.getElementById("button1").addEventListener("click", function() {
             // Add your code for Button 1's functionality here
             authenticatedUser.coins = 10;
+            alert("coins:"+authenticatedUser.coins);
           });
 
-        document.getElementById("button2").addEventListener("click", function() {
-            // Add your code for Button 2's functionality here
-            alert("Button 2 clicked!");
-          });
+          document.getElementById("button2").addEventListener("click", function() {
+              // Add your code for Button 2's functionality here
+              alert("Button 2 clicked!");
+            });
         } else {
           alert('Authentication failed');
         }

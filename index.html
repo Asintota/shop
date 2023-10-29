@@ -49,8 +49,8 @@
         
         if (authenticatedUser) {
           window.location.href = "shop.html";
-          console.log(userData.coins);
-          alert(userData.coins);
+          console.log(authenticatedUser.coins); // Log the "coins" value of the authenticated user
+          alert('Coins: ' + authenticatedUser.coins); // Display the "coins" value in an alert
         } else {
           alert('Authentication failed');
         }

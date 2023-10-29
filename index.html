@@ -45,8 +45,11 @@
         }
         const userData = await response.json(); // Parse the JSON data
         const authenticatedUser = userData.find(user => user.username === username && user.password === password);
+        
+        
         if (authenticatedUser) {
           window.location.href = "shop.html";
+          console.log(userData.coins);
         } else {
           alert('Authentication failed');
         }

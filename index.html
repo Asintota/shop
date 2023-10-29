@@ -46,7 +46,7 @@
         const userData = await response.json(); // Parse the JSON data
         const authenticatedUser = userData.find(user => user.username === username && user.password === password);
         if (authenticatedUser) {
-          alert('Login successful');
+          window.location.href = "shop.html";
         } else {
           alert('Authentication failed');
         }
